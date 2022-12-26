@@ -1,16 +1,17 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import { routes } from "../router";
+
 const children = ref(
   routes
-    .find((r) => r.path === "/tutorials")
-    .children.map(({ name, path }) => {
+    .filter((r) => r.path === "/tutorials")[0]
+    ?.children?.map(({ name, path }) => {
       return {
         name,
         path: `/tutorials/${path}`,
       };
-    })
+    }) || []
 );
 </script>
 

@@ -1,10 +1,8 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+interface IProps {
+  msg: string;
+}
+withDefaults(defineProps<IProps>(), { msg: "" });
 </script>
 
 <template>

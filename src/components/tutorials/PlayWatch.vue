@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import { ref, watch } from "vue";
 
-const todoId = ref(1);
-const todoData = ref(null);
+const todoId = ref<number>(1);
+const todoData = ref<any | null>(null);
 
 async function fetchData() {
   todoData.value = null;

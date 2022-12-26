@@ -1,5 +1,5 @@
-<script setup>
-import { useMouse } from "./composable/mouse.js";
+<script setup lang="ts">
+import { useMouse } from "./composable/mouse";
 
 const { x, y } = useMouse();
 </script>
@@ -13,7 +13,7 @@ const { x, y } = useMouse();
 <style>
 .text {
   padding-inline: 1rem;
-  color:#000;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;

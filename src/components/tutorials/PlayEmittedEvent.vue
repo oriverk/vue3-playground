@@ -1,13 +1,13 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import ChildComp from "./PlayEmitEvent.vue";
 
-const childMsg = ref("No child msg yet");
+const childMsg = ref<string>("No child msg yet");
 </script>
 
 <template>
   <div>
-    <ChildComp @response="(msg) => (childMsg = msg)" />
+    <ChildComp @response="(msg: string) => (childMsg = msg)" />
     <p>{{ childMsg }}</p>
   </div>
 </template>

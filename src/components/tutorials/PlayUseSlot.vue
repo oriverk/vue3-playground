@@ -1,8 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import ChildComp from "./PlaySlot.vue";
 
-const msg = ref("from parent");
+const msg = ref<string>("from parent");
 </script>
 
 <template>

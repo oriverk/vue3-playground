@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import SandBox from "../components/SandBox.vue";
 </script>
 

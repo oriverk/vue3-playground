@@ -1,6 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
-const awesome = ref(true);
+const awesome = ref<boolean>(true);
 function toggle() {
   awesome.value = !awesome.value;
 }

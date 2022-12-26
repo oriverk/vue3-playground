@@ -1,8 +1,9 @@
-<script setup>
-// eslint-disable-next-line no-unused-vars
-const props = defineProps({
-  msg: String,
-});
+<script setup lang="ts">
+interface IProps {
+  msg: string;
+}
+
+withDefaults(defineProps<IProps>(), { msg: "" });
 </script>
 
 <template>

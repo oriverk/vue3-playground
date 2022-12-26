@@ -1,7 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import PlayPassProps from "./PlayPassProps.vue";
-const greeting = ref("passed props from parent");
+const greeting = ref<string>("passed props from parent");
 </script>
 
 <template>
